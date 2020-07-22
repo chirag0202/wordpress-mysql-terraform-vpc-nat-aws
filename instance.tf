@@ -23,4 +23,7 @@ resource "aws_instance"  "mysql" {
   tags = {
     Name = "Mysql"
   }
+  depends_on = [
+    aws_nat_gateway.natgw
+  ]
 }

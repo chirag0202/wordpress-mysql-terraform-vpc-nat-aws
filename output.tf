@@ -16,6 +16,7 @@ resource "null_resource" "nulllocal1"  {
   	}
 	  depends_on = [
     aws_instance.wordpress
+	aws_instance.mysql
   ]
 }
 
